@@ -1,10 +1,11 @@
-#include <chrono>
-#include <thread>
+#include <iostream>     //  Fix for std::cout and std::endl
+#include <thread>       // For sleep
+#include <chrono>       // For sleep duration
 
 int main() {
     std::cout << "Starting Trading System..." << std::endl;
 
-    // Keep the app alive (for debugging or logs)
+    // Keeps container alive so Render doesn't shut it down
     while (true) {
         std::this_thread::sleep_for(std::chrono::seconds(10));
     }
