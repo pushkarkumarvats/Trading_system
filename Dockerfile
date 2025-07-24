@@ -4,3 +4,4 @@ COPY . /app
 WORKDIR /app
 RUN cmake . && make
 CMD ["./trading-system"]
+EXPOSE 8080
